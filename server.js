@@ -6,22 +6,56 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne =
-{
-    title:"Article-1",
-    heading:"Article one",
-    content:`<p>
-                    This is for testing purpose only.
-                    All you can Understand...:)
-                </p>
-                <p>
-                    This is for testing purpose only.
-                    All you can Understand...:)
-                </p>
-                <p>
-                    This is for testing purpose only.
-                    All you can Understand...:)
-                </p>`
+var articles={
+articleOne =
+    {
+        title:"Article-1",
+        heading:"Article one",
+        content:`<p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>
+                    <p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>
+                    <p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>`
+    },
+    articleTwo={
+        title:"Article-2",
+        heading:"Article Two",
+        content:`<p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>
+                    <p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>
+                    <p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>`
+    },
+    articleThree={
+        title:"Article-3",
+        heading:"Article Three",
+        content:`<p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>
+                    <p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>
+                    <p>
+                        This is for testing purpose only.
+                        All you can Understand...:)
+                    </p>`
+    }
 };
 
 function createTemplate(data)
