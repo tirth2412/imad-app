@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var articleOne =
 {
-    title:"Article-2",
+    title:"Article-1",
     heading:"Article one",
     content:`<p>
                     This is for testing purpose only.
@@ -32,7 +32,7 @@ function createTemplate(data)
     var htmlTemplate=
     `<html>
     <head>
-        <title>Article-3</title>
+        <title>${title}</title>
         <meta name="viewport" content="width, initial-scale=1">
         <link href="ui/style.css" rel="stylesheet" />
     </head>
