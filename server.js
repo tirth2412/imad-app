@@ -97,7 +97,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-    var articleName=req.param.articleName;
+    var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
 
