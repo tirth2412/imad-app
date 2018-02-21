@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var articleOne =
 {
-    title:"Article-1",
+    title:"Article-2",
     heading:"Article one",
     content:`<p>
                     This is for testing purpose only.
