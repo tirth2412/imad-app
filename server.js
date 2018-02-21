@@ -14,15 +14,15 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/style.css', function (req, res) {
-    res.send("This is Article one...")
+    res.send("This is Article one...");
 });
 
 app.get('/ui/style.css', function (req, res) {
-    res.send("This is Article two...")
+    res.send("This is Article two...");
 });
 
 app.get('/ui/style.css', function (req, res) {
-    res.send("This is Article three...")
+    res.send("This is Article three...");
 });
 
 app.get('/ui/madi.png', function (req, res) {
