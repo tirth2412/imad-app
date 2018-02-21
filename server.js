@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles={
-articleOne =
+articleOne :
     {
         title:"Article-1",
         heading:"Article one",
@@ -24,7 +24,7 @@ articleOne =
                         All you can Understand...:)
                     </p>`
     },
-    articleTwo={
+    articleTwo:{
         title:"Article-2",
         heading:"Article Two",
         content:`<p>
@@ -40,7 +40,7 @@ articleOne =
                         All you can Understand...:)
                     </p>`
     },
-    articleThree={
+    articleThree:{
         title:"Article-3",
         heading:"Article Three",
         content:`<p>
@@ -97,8 +97,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+    var articleName=req.param.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {
