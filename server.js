@@ -97,9 +97,9 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 var counter=0;
-app.get('/hello',function (req,res) {
+app.get('/counter',function (req,res) {
   counter=counter+1;
-  res.send("gfdnk");
+  res.send(counter.toString());
 });
 
 //app.get('/:articleName', function (req, res) {
